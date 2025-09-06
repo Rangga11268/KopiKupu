@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asset Test - Kopi Kupu</title>
+</head>
+<body>
+    <h1>Asset Test Page</h1>
+    
+    <h2>CSS File Test</h2>
+    <link rel="stylesheet" href="css/style.css" />
+    <p style="color: #d4a76a;">If this text is gold-colored, CSS is loading correctly.</p>
+    
+    <h2>Image Assets Test</h2>
+    <img src="assets/image/kopi.png" alt="Kopi Icon" style="width: 100px; height: 100px;" onerror="this.alt='Kopi Icon - Failed to load'">
+    <img src="assets/image/bg.png" alt="Background" style="width: 100px; height: 100px;" onerror="this.alt='Background - Failed to load'">
+    <img src="assets/image/tentang-kami.jpg" alt="Tentang Kami" style="width: 100px; height: 100px;" onerror="this.alt='Tentang Kami - Failed to load'">
+    <img src="assets/image/Menu/produk1.png" alt="Produk" style="width: 100px; height: 100px;" onerror="this.alt='Produk - Failed to load'">
+    
+    <h2>JavaScript File Test</h2>
+    <script src="js/script.js"></script>
+    <p>If JavaScript is working, you should see a message in the console.</p>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Asset test: JavaScript is working correctly');
+        });
+    </script>
+    
+    <h2>External Libraries Test</h2>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <p>If Feather icons are working, you should see icons below:</p>
+    <i data-feather="coffee" style="width: 50px; height: 50px;"></i>
+    <i data-feather="heart" style="width: 50px; height: 50px;"></i>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+        });
+    </script>
+</body>
+</html>

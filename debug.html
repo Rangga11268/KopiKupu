@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug - Kopi Kupu</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <h1>Testing CSS Loading</h1>
+    <p>If this text is styled with the custom fonts and colors, CSS is working.</p>
+    
+    <div class="menu-card">
+        <h3 class="menu-card-title">Test Card</h3>
+        <p class="menu-card-price">Rp. 20.000</p>
+        <button class="add-to-cart" data-name="Test" data-price="20000">Tambah ke Keranjang</button>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script>
+        // Test if JavaScript is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('JavaScript loaded successfully');
+            
+            // Test if we can access the cart
+            console.log('Cart:', typeof cart !== 'undefined' ? 'Available' : 'Not available');
+            
+            // Test if we can access the updateCartIcon function
+            console.log('updateCartIcon function:', typeof updateCartIcon === 'function' ? 'Available' : 'Not available');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        canvas {
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+        button {
+            background-color: #79351e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: #bd4b25;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Generator for Coffee Products</h1>
+        <p>Click the button below to generate and download placeholder images for the coffee menu.</p>
+        
+        <button onclick="generateImages()">Generate Coffee Images</button>
+        
+        <div id="imageContainer"></div>
+    </div>
+
+    <script>
+        function generateImages() {
+            const container = document.getElementById('imageContainer');
+            container.innerHTML = '';
+            
+            const coffeeTypes = [
+                { name: 'Espresso', color: '#5D4037' },
+                { name: 'Americano', color: '#8D6E63' },
+                { name: 'Cappuccino', color: '#A1887F' },
+                { name: 'Latte', color: '#D7CCC8' },
+                { name: 'Mocha', color: '#6D4C41' },
+                { name: 'Macchiato', color: '#BCAAA4' },
+                { name: 'Affogato', color: '#4E342E' },
+                { name: 'Cold Brew', color: '#3E2723' }
+            ];
+            
+            coffeeTypes.forEach((coffee, index) => {
+                const canvas = document.createElement('canvas');
+                canvas.width = 300;
+                canvas.height = 300;
+                const ctx = canvas.getContext('2d');
+                
+                // Draw circle background
+                ctx.beginPath();
+                ctx.arc(150, 150, 140, 0, 2 * Math.PI);
+                ctx.fillStyle = coffee.color;
+                ctx.fill();
+                
+                // Add coffee bean shapes
+                ctx.fillStyle = '#2E1E10';
+                for (let i = 0; i < 5; i++) {
+                    const x = 100 + Math.random() * 100;
+                    const y = 100 + Math.random() * 100;
+                    drawCoffeeBean(ctx, x, y);
+                }
+                
+                // Add text
+                ctx.fillStyle = 'white';
+                ctx.font = 'bold 24px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText(coffee.name, 150, 150);
+                
+                // Create download link
+                const link = document.createElement('a');
+                link.download = `${coffee.name.toLowerCase().replace(' ', '-')}.png`;
+                link.href = canvas.toDataURL();
+                link.textContent = `Download ${coffee.name} Image`;
+                
+                const div = document.createElement('div');
+                div.style.margin = '20px 0';
+                div.style.textAlign = 'center';
+                
+                div.appendChild(canvas);
+                div.appendChild(document.createElement('br'));
+                div.appendChild(link);
+                
+                container.appendChild(div);
+            });
+        }
+        
+        function drawCoffeeBean(ctx, x, y) {
+            ctx.beginPath();
+            ctx.ellipse(x, y, 15, 10, Math.PI/4, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+    </script>
+</body>
+</html>

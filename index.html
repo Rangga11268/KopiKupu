@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kopi Kupu</title>
+  </head>
+  <body>
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="loader-text">Memuat Kopi Kupu...</div>
+      </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Kopi<span>Kupu.</span></a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak kami</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shooping-cart">
+          <i data-feather="shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Nikmati Kopi Terbaik dari <span>Kopi Kupu</span></h1>
+        <p>
+          Rasakan kelezatan kopi pilihan kami yang dipanggang dengan sempurna dan disajikan segar setiap hari. Nikmati pengalaman kopi terbaik hanya di Kopi Kupu.
+        </p>
+        <a href="#menu" class="cta">Pesan Sekarang</a>
+      </main>
+    </section>
+
+    <!-- hero section end -->
+
+    <!-- About section -->
+
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="assets/image/tentang-kami.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kisah Kami Dimulai dengan Secangkir Kopi</h3>
+          <p>
+            Sejak tahun 2010, Kopi Kupu telah menyajikan kopi berkualitas tinggi yang dipanggang dengan penuh dedikasi dan cinta. Kami memilih biji kopi terbaik dari perkebunan lokal dan internasional untuk memberikan pengalaman kopi terbaik bagi pelanggan kami.
+          </p>
+          <p>
+            Setiap cangkir kopi yang kami sajikan adalah perwujudan dari komitmen kami terhadap kualitas, keberlanjutan, dan kepuasan pelanggan. Kami percaya bahwa secangkir kopi yang baik dapat membuat hari Anda lebih baik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About  end -->
+
+    <!-- menu section -->
+
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+
+      <p>
+        Nikmati berbagai pilihan kopi istimewa kami yang dipanggang segar setiap hari
+      </p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="assets/image/Menu/produk1.png"
+            alt="Espresso"
+            class="menu-card-image"
+          />
+          <h3 class="menu-card-title">- Espresso -</h3>
+          <p class="menu-card-price">Rp. 20.000</p>
+          <button class="add-to-cart" data-name="Espresso" data-price="20000">Tambah ke Keranjang</button>
+        </div>
+        <div class="menu-card">
+          <img
+            src="assets/image/Menu/produk1.png"
+            alt="Americano"
+            class="menu-card-image"
+          />
+          <h3 class="menu-card-title">- Americano -</h3>
+          <p class="menu-card-price">Rp. 22.000</p>
+          <button class="add-to-cart" data-name="Americano" data-price="22000">Tambah ke Keranjang</button>
+        </div>
+        <div class="menu-card">
+          <img
+            src="assets/image/Menu/produk1.png"
+            alt="Cappuccino"
+            class="menu-card-image"
+          />
+          <h3 class="menu-card-title">- Cappuccino -</h3>
+          <p class="menu-card-price">Rp. 25.000</p>
+          <button class="add-to-cart" data-name="Cappuccino" data-price="25000">Tambah ke Keranjang</button>
+        </div>
+        <div class="menu-card">
+          <img
+            src="assets/image/Menu/produk1.png"
+            alt="Latte"
+            class="menu-card-image"
+          />
+          <h3 class="menu-card-title">- Latte -</h3>
+          <p class="menu-card-price">Rp. 27.000</p>
+          <button class="add-to-cart" data-name="Latte" data-price="27000">Tambah ke Keranjang</button>
+        </div>
+        <div class="menu-card">
+          <img
+            src="assets/image/Menu/produk1.png"
+            alt="Mocha"
+            class="menu-card-image"
+          />
+          <h3 class="menu-card-title">- Mocha -</h3>
+          <p class="menu-card-price">Rp. 28.000</p>
+          <button class="add-to-cart" data-name="Mocha" data-price="28000">Tambah ke Keranjang</button>
+        </div>
+        <div class="menu-card">
+          <img
+            src="assets/image/Menu/produk1.png"
+            alt="Macchiato"
+            class="menu-card-image"
+          />
+          <h3 class="menu-card-title">- Macchiato -</h3>
+          <p class="menu-card-price">Rp. 24.000</p>
+          <button class="add-to-cart" data-name="Macchiato" data-price="24000">Tambah ke Keranjang</button>
+        </div>
+        <div class="menu-card">
+          <img
+            src="assets/image/Menu/produk1.png"
+            alt="Affogato"
+            class="menu-card-image"
+          />
+          <h3 class="menu-card-title">- Affogato -</h3>
+          <p class="menu-card-price">Rp. 30.000</p>
+          <button class="add-to-cart" data-name="Affogato" data-price="30000">Tambah ke Keranjang</button>
+        </div>
+        <div class="menu-card">
+          <img
+            src="assets/image/Menu/produk1.png"
+            alt="Cold Brew"
+            class="menu-card-image"
+          />
+          <h3 class="menu-card-title">- Cold Brew -</h3>
+          <p class="menu-card-price">Rp. 26.000</p>
+          <button class="add-to-cart" data-name="Cold Brew" data-price="26000">Tambah ke Keranjang</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us start -->
+
+    <section id="contact" class="contact">
+      <h2><span>Hubungi</span> kami</h2>
+      <p>
+        Punya pertanyaan atau ingin reservasi tempat? Jangan ragu untuk menghubungi kami!
+      </p>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.55496528033!2d107.01710677457037!3d-6.190254293797336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698900779f6995%3A0xc3d4916a9e101e2c!2sbekasi%20Utara!5e0!3m2!1sid!2sid!4v1743496433408!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+        <form action="#" class="contact-form">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Nama Lengkap" required>
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="Nomor Telepon" required>
+          </div>
+          <div class="input-group">
+            <i data-feather="message-square"></i>
+            <textarea placeholder="Pesan Anda" required></textarea>
+          </div>
+          <button type="submit" class="btn">Kirim pesan</button>
+        </form>
+      </div>
+      
+      <div class="contact-info">
+        <div>
+          <i data-feather="map-pin"></i>
+          <p>Jl. Kopi No. 123, Bekasi Utara</p>
+        </div>
+        <div>
+          <i data-feather="phone"></i>
+          <p>+62 812 3456 7890</p>
+        </div>
+        <div>
+          <i data-feather="mail"></i>
+          <p>info@kopikupu.com</p>
+        </div>
+        <div>
+          <i data-feather="clock"></i>
+          <p>Senin - Minggu: 07:00 - 22:00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu section end -->
+
+    <!-- testimonials section -->
+    <section class="testimonials">
+      <h2><span>Testimoni</span> Pelanggan</h2>
+      <p>Apa kata pelanggan kami tentang kopi dan layanan kami</p>
+      
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <div class="testimonial-placeholder">BS</div>
+          <h3>Budi Santoso</h3>
+          <p class="rating">★★★★★</p>
+          <p>"Kopi terbaik yang pernah saya cicipi! Rasa yang kaya dan aroma yang luar biasa. Tempatnya juga nyaman untuk bekerja."</p>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-placeholder">SR</div>
+          <h3>Siti Rahmawati</h3>
+          <p class="rating">★★★★★</p>
+          <p>"Pelayanan ramah dan kopi berkualitas tinggi. Saya selalu datang ke sini setiap pagi sebelum mulai bekerja."</p>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-placeholder">AP</div>
+          <h3>Andi Prasetyo</h3>
+          <p class="rating">★★★★☆</p>
+          <p>"Variasi menunya lengkap dan harganya terjangkau. Tempat nongkrong yang cocok untuk berkumpul dengan teman."</p>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials section end -->
+
+    <!-- footer start -->
+
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Hubungi Kami</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="#">DarellRangga</a>. | &copy; 2025 Kopi Kupu</p>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <!-- contact us end -->
+
+    <!-- feather icon -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        feather.replace();
+      });
+    </script>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
